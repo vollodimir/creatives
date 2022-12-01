@@ -1,2 +1,2 @@
-$max-width-wrapper: 1500px;
-$max-width-container: 1170px;
+$max-width-wrapper: 1920px;
+$max-width-container: calc($max-width-wrapper + 30px - 285px * 2);

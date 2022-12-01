@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mebel</title>
+    <title>Creatives</title>
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/fontawesome.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
@@ -15,12 +16,20 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__body">
+        <div
+          class="header__body"
+          style="
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('./img/header_bg.png');
+          "
+        >
           <!--fixed menu-->
           <div class="header__wrapper">
             <div class="header__container">
               <div class="header__navigation">
-                <div class="header__logo logo"><a href="#">Mebel.</a></div>
+                <div class="logo">
+                  <a href="#"> <img height="60px" src="./img/icon/logo.svg" alt="" /> </a>
+                </div>
                 <input class="header__input" type="checkbox" />
                 <div class="header__lines"></div>
 
@@ -28,40 +37,43 @@
                   <nav>
                     <ul class="header__menu">
                       <li class="header__menu--active"><a href="#">Home</a></li>
-                      <li><a href="#">About us</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Blog</a></li>
-                      <li><a href="#">Contac us</a></li>
+                      <li><a href="#">Pages</a></li>
+                      <li><a href="#">Features</a></li>
+                      <li><a href="#">Extensions</a></li>
+                      <li><a href="#">Tutorials</a></li>
+                      <li><a href="#">Contact Us</a></li>
                     </ul>
                   </nav>
-                  <div class="header__user-btn">
+                  <div class="header__socials">
                     <a href="#">
-                      <img width="24px" height="24px" src="./img/icon/user.svg" alt="user"
-                    /></a>
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
                     <a href="#">
-                      <img width="24px" height="24px" src="./img/icon/cart.svg" alt="cart"
-                    /></a>
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-skype" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!--fixed menu END-->
-          <div class="header__row">
-            <div class="header__text">
-              <div class="header__title">
-                Modern Interior<br />
-                Design Studio
-              </div>
-              <div class="header__btns">
-                <a class="header__btn header__btn--filled" href="#">Shop Now</a>
-                <a class="header__btn" href="#">Explore</a>
-              </div>
+          <section class="header__screen">
+            <div class="header__title">
+              <h1>Creatives</h1>
+              <p>design agency</p>
             </div>
-            <div class="header__img">
-              <!-- <img src="./img/header_sofa.png" title="" /> -->
+
+            <div class="header__btn">
+              <p>SCROLL DOwN</p>
+              <img width="40px" height="40px" src="./img/icon/mouse.svg" alt="SCROLL DOWN" />
             </div>
-          </div>
+          </section>
         </div>
       </header>
       <main>
