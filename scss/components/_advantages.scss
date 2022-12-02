@@ -1,0 +1,79 @@
+@import '../variables';
+
+.advantages {
+  background: #240000;
+  &__body {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 170px;
+  }
+  &__title {
+    min-height: 200px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      display: block;
+      position: relative;
+      text-transform: uppercase;
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  &__bg-letter {
+    position: absolute;
+    height: 100%;
+    font-weight: 900;
+    font-size: 240px;
+    line-height: 200px;
+    color: #460000;
+  }
+  &__features {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.feature {
+  &__body {
+    text-align: center;
+    //margin: 15px;
+    width: 315px;
+    min-height: 285px; ////////
+  }
+  &__image {
+    margin: 0 auto 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #460000;
+    img {
+      margin: 30px;
+      height: 60px;
+      width: 60px;
+      object-fit: cover;
+    }
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+}
