@@ -24,18 +24,17 @@ $line-height: $width/7;
     width: 100%;
     left: 0;
     top: 0;
-
     height: 100px;
     z-index: 100;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  &__container {
-    margin: 0 auto;
-    max-width: $max-width-wrapper;
-    height: 100%;
-    //background: rgba(#000, 0.2);
-  }
+  // &__container {
+  //   margin: 0 auto;
+  //   max-width: $max-width-wrapper;
+  //   height: 100%;
+  //   //background: rgba(#000, 0.2);
+  // }
 
   &__navigation {
     margin: 0 auto;
