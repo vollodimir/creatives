@@ -14,11 +14,12 @@
   }
   &__title {
     width: 100%;
-    font-size: 30px;
-    line-height: 40px;
+    margin-bottom: 100px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 100px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
   }
   &__mesage {
     position: relative;
