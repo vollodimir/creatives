@@ -10,52 +10,53 @@
     <link rel="stylesheet" href="/css/fontawesome.css" />
     <link rel="stylesheet" href="/css/style.css" />
 
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" id="top">
         <div
           class="header__body"
           style="
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-              url('./img/header_bg.png');
+              url('./img/header_bg.webp');
           "
         >
           <!--fixed menu-->
           <div class="header__wrapper">
-            <div class="header__navigation">
-              <div class="header__logo logo">
-                <a href="#"> <img height="60px" src="./img/icon/logo.svg" alt="" /> </a>
-              </div>
-              <input class="header__input" type="checkbox" />
-              <div class="header__lines"></div>
+            <div class="header__container">
+              <div class="header__navigation">
+                <div class="header__logo logo">
+                  <a href="\"> <img height="60px" src="./img/icon/logo.svg" alt="" /> </a>
+                </div>
+                <input class="header__input" type="checkbox" />
+                <div class="header__lines"></div>
 
-              <div class="header__all-menu">
-                <nav>
-                  <ul class="header__menu">
-                    <li class="header__menu--active"><a href="#">Home</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Extensions</a></li>
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
-                </nav>
-                <div class="header__socials">
-                  <a href="#">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-skype" aria-hidden="true"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
+                <div class="header__all-menu">
+                  <nav>
+                    <ul class="header__menu">
+                      <li><a href="#top">Home</a></li>
+                      <li class="header__menu--active"><a href="#">Pages</a></li>
+                      <li><a href="#features">Features</a></li>
+                      <li><a href="#">Extensions</a></li>
+                      <li><a href="#">Tutorials</a></li>
+                      <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                  </nav>
+                  <div class="header__socials">
+                    <a href="#">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-skype" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -68,15 +69,18 @@
             </div>
 
             <div class="header__btn">
-              <p>SCROLL DOwN</p>
-              <img width="40px" height="40px" src="./img/icon/mouse.svg" alt="SCROLL DOWN" />
+              <a href="#features">
+                <p>SCROLL DOwN</p>
+                <div class="mouse"></div>
+                <!-- <img width="40px" height="40px" src="./img/icon/mouse.svg" alt="SCROLL DOWN" /> -->
+              </a>
             </div>
           </section>
           <!--header__screen END-->
         </div>
       </header>
       <main>
-        <section class="advantages">
+        <section class="advantages" id="features">
           <div class="container">
             <div class="advantages__body">
               <div class="advantages__title">
@@ -89,7 +93,7 @@
                     <div class="feature__image">
                       <img src="./img/icon/feature_idea.svg" alt="" />
                     </div>
-                    <h3>FEATURE ONE</h3>
+                    <h3><a href="#">FEATURE ONE</a></h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare blandit
                       ante, quis pellentesque orci efficitur vel.
@@ -101,7 +105,7 @@
                     <div class="feature__image">
                       <img src="./img/icon/feature_promotion.svg" alt="" />
                     </div>
-                    <h3>FEATURE ONE</h3>
+                    <h3><a href="#">FEATURE two</a></h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare blandit
                       ante, quis pellentesque orci efficitur vel.
@@ -114,7 +118,7 @@
                     <div class="feature__image">
                       <img src="./img/icon/feature_goal.svg" alt="" />
                     </div>
-                    <h3>FEATURE ONE</h3>
+                    <h3><a href="#">FEATURE thre</a></h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare blandit
                       ante, quis pellentesque orci efficitur vel.
@@ -127,7 +131,7 @@
                     <div class="feature__image">
                       <img src="./img/icon/feature_startup.svg" alt="" />
                     </div>
-                    <h3>FEATURE ONE</h3>
+                    <h3><a href="#">FEATURE four</a></h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare blandit
                       ante, quis pellentesque orci efficitur vel.
@@ -140,10 +144,11 @@
         </section>
         <!-- advantages END -->
         <section
+          id="contact-us"
           class="contact"
           style="
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-              url('./img/contact_bg.png');
+              url('./img/contact_bg.webp');
           "
         >
           <div class="container">
@@ -151,11 +156,23 @@
               <div class="contact__title">We’d love to hear about your project</div>
               <form>
                 <div class="contact__inputs">
-                  <input type="text" placeholder="Name" />
-                  <input type="email" placeholder="Email" />
-                  <input type="tel" placeholder="Phone" />
+                  <label>
+                    <input type="text" placeholder=" " />
+                    <span>Name</span>
+                  </label>
+                  <label>
+                    <input type="email" placeholder=" " />
+                    <span>Email</span>
+                  </label>
+
+                  <label>
+                    <input type="tel" placeholder=" " />
+                    <span>Phone</span>
+                  </label>
                 </div>
-                <textarea placeholder="Message"></textarea>
+                <div class="contact__mesage">
+                  <textarea placeholder=" " required></textarea><span>Message</span>
+                </div>
                 <button class="contact__btn">SUBMIT</button>
               </form>
             </div>
@@ -181,6 +198,10 @@
       </footer>
     </div>
 
-    <!-- <script src="./js/main.js"></script> -->
+    <div class="go-top">
+      <a href="#top"> </a>
+    </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

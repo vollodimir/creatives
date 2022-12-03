@@ -4,25 +4,24 @@ for (let smoothLink of smoothLinks) {
   smoothLink.addEventListener('click', function (e) {
     e.preventDefault();
     const id = smoothLink.getAttribute('href');
-    //
-    // smoothLink.classList.add('a_active');
-    // console.log(smoothLink);
 
-    //
-    document.querySelector(id).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
+    if (id !== '#') {
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
   });
 }
-//--hiden-btn-vverh
-let elNaverh = document.querySelector('.naverh');
+
+//--hiden-btn
+const goTop = document.querySelector('.go-top');
 window.onscroll = () => {
   if (window.pageYOffset < 800) {
-    elNaverh.style.display = 'none';
+    goTop.style.display = 'none';
   } else {
-    elNaverh.style.display = 'block';
+    goTop.style.display = 'block';
   }
 };
 
-//--hiden-btn-vverh--end-
+//--hiden-btn--end-

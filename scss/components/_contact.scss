@@ -5,7 +5,8 @@
   background-size: cover !important;
   &__body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,45 +20,70 @@
     text-transform: uppercase;
     margin-bottom: 100px;
   }
+  &__mesage {
+    position: relative;
+    margin-bottom: 60px;
+    width: 100%;
+  }
   form {
     text-align: center;
     width: 100%;
 
     input,
     textarea,
-    textarea::placeholder,
-    input::placeholder,
     input:focus,
     textarea:focus {
       font-family: 'Open Sans', sans-serif;
       background: none;
-
       outline: none;
       font-family: 'Open Sans';
       font-weight: 400;
       font-size: 16px;
       color: #fff;
+      border: 1px solid rgba(#ffffff, 1);
     }
 
-    input {
-      padding: 13px 20px 13px 20px;
-      //width: 430px;
+    label {
       width: 35%;
       height: 50px;
-      border: 1px solid rgba(#ffffff, 0.5);
+      position: relative;
       display: block;
       margin: 0 30px 30px 0;
       &:last-child {
         margin-right: 0;
       }
     }
-    textarea {
+
+    input {
       padding: 13px 20px 13px 20px;
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgba(#ffffff, 0.5);
+    }
+    textarea {
+      padding: 13px 20px;
       width: 100%;
       border: 1px solid rgba(#ffffff, 0.5);
       resize: vertical;
       min-height: 200px;
-      margin-bottom: 60px;
+    }
+    span {
+      display: block;
+      position: absolute;
+      top: 13px;
+      left: 20px;
+      transition: 0.5s;
+    }
+
+    input:focus ~ span,
+    textarea:focus ~ span,
+    input:not(:placeholder-shown) ~ span,
+    textarea:not(:placeholder-shown) ~ span {
+      top: -20px;
+      left: 0;
+      &::after {
+        content: ':';
+      }
     }
   }
   &__inputs {
@@ -68,8 +94,15 @@
     height: 60px;
     text-transform: uppercase;
     background: #bd0000;
+    border: 3px solid #bd0000;
     color: #fff;
     font-weight: 800;
     font-size: 16px;
+    transition: 0.8s;
+    cursor: pointer;
+
+    &:hover {
+      background: none;
+    }
   }
 }
