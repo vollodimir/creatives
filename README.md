@@ -1,5 +1,7 @@
 # Creative
 
-HTML templtate, landing page to WordPress
+HTML templtate, landing page, HTML to WordPress
 
-Hosted: <a href="http://creatives.pl.vn.ua/">creatives.pl.vn.ua</a>
+HTML hosted: <a href="http://pl.vn.ua/creatives">pl.vn.ua/creatives</a>
+
+WordPress hosted <a href="http://wp.pl.vn.ua/creatives">wp.pl.vn.ua</a>

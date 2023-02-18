@@ -396,38 +396,39 @@
   resize: vertical;
   min-height: 200px;
 }
-.contact form span {
+.contact form i {
   display: block;
   position: absolute;
   top: 13px;
   left: 20px;
   transition: 0.5s;
+  font-style: normal;
 }
-.contact form input:not(:-moz-placeholder-shown) ~ span, .contact form textarea:not(:-moz-placeholder-shown) ~ span {
+.contact form span:has(> input:not(:-moz-placeholder-shown)) + i, .contact form span:has(> textarea:not(:-moz-placeholder-shown)) + i {
   top: -20px;
   left: 0;
 }
-.contact form input:not(:-ms-input-placeholder) ~ span, .contact form textarea:not(:-ms-input-placeholder) ~ span {
+.contact form span:has(> input:not(:-ms-input-placeholder)) + i, .contact form span:has(> textarea:not(:-ms-input-placeholder)) + i {
   top: -20px;
   left: 0;
 }
-.contact form input:focus ~ span,
-.contact form textarea:focus ~ span,
-.contact form input:not(:placeholder-shown) ~ span,
-.contact form textarea:not(:placeholder-shown) ~ span {
+.contact form span:has(> input:focus) + i,
+.contact form span:has(> textarea:focus) + i,
+.contact form span:has(> input:not(:placeholder-shown)) + i,
+.contact form span:has(> textarea:not(:placeholder-shown)) + i {
   top: -20px;
   left: 0;
 }
-.contact form input:not(:-moz-placeholder-shown) ~ span::after, .contact form textarea:not(:-moz-placeholder-shown) ~ span::after {
+.contact form span:has(> input:not(:-moz-placeholder-shown)) + i::after, .contact form span:has(> textarea:not(:-moz-placeholder-shown)) + i::after {
   content: ":";
 }
-.contact form input:not(:-ms-input-placeholder) ~ span::after, .contact form textarea:not(:-ms-input-placeholder) ~ span::after {
+.contact form span:has(> input:not(:-ms-input-placeholder)) + i::after, .contact form span:has(> textarea:not(:-ms-input-placeholder)) + i::after {
   content: ":";
 }
-.contact form input:focus ~ span::after,
-.contact form textarea:focus ~ span::after,
-.contact form input:not(:placeholder-shown) ~ span::after,
-.contact form textarea:not(:placeholder-shown) ~ span::after {
+.contact form span:has(> input:focus) + i::after,
+.contact form span:has(> textarea:focus) + i::after,
+.contact form span:has(> input:not(:placeholder-shown)) + i::after,
+.contact form span:has(> textarea:not(:placeholder-shown)) + i::after {
   content: ":";
 }
 .contact__inputs {
